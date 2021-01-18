@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuegoDeCartas", "JuegoDeCartas\JuegoDeCartas.csproj", "{32CEB04D-2A4F-4142-8877-F5643D1E8BFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuegoDeCartasLibrary", "JuegoDeCartasLibrary\JuegoDeCartasLibrary.csproj", "{84E4FD37-D506-4784-94E6-1C677941AC88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32CEB04D-2A4F-4142-8877-F5643D1E8BFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32CEB04D-2A4F-4142-8877-F5643D1E8BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32CEB04D-2A4F-4142-8877-F5643D1E8BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32CEB04D-2A4F-4142-8877-F5643D1E8BFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E4FD37-D506-4784-94E6-1C677941AC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E4FD37-D506-4784-94E6-1C677941AC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E4FD37-D506-4784-94E6-1C677941AC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E4FD37-D506-4784-94E6-1C677941AC88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC6731C6-F50A-4F1A-AAA7-B11BD86E8AC2}
+	EndGlobalSection
+EndGlobal
