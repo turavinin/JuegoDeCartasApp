@@ -14,7 +14,7 @@ namespace JuegoDeCartasLibrary
         internal List<CartaJugableModel> cartasDisponibles = new List<CartaJugableModel>();
         internal List<CartaJugableModel> cartasDesechadas = new List<CartaJugableModel>();
 
-        internal virtual void CrearMazo()
+        protected virtual void CrearMazo()
         {
             // Limpiar mazo cada vez que se llama a crearlo
             mazoCompleto.Clear();
@@ -24,7 +24,7 @@ namespace JuegoDeCartasLibrary
             {
                 for (int valor = 0; valor < 13; valor++)
                 {
-                    mazoCompleto.Add(new CartaJugableModel { Palo = (PaloInglesa)palo, Valor = (ValorInglesa)valor });
+                    mazoCompleto.Add(new CartaJugableModel { PaloInglesa = (PaloInglesa)palo, ValorInglesa = (ValorInglesa)valor });
                 }
             }
         }

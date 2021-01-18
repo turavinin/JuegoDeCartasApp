@@ -18,7 +18,7 @@ namespace JuegoDeCartas
 
             foreach (var carta in mano)
             {
-                Console.WriteLine($"{carta.Valor} de {carta.Palo}");
+                Console.WriteLine($"{carta.ValorInglesa} de {carta.PaloInglesa}");
             }
             Console.WriteLine();
 
@@ -29,12 +29,19 @@ namespace JuegoDeCartas
 
             foreach (var carta in manoBJ)
             {
-                Console.WriteLine($"{ carta.Valor } de { carta.Palo }");
+                Console.WriteLine($"{ carta.ValorInglesa } de { carta.PaloInglesa }");
             }
             Console.WriteLine();
 
             // MAZO TRUCO
             Console.WriteLine("MANO DE TRUCO");
+            var mazoTruco = new MazoTruco();
+            var manoTruco = mazoTruco.RepartirCartas();
+
+            foreach (var carta in manoTruco)
+            {
+                Console.WriteLine($"{ carta.ValorEspañola } de {carta.PaloEspañola}");
+            }
 
 
             Console.ReadLine();
