@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JuegoDeCartasLibrary.Enum
 {
-    public enum PaloCarta
+    public enum PaloInglesa
     {
         Picas,
         Corazones,
@@ -14,7 +14,7 @@ namespace JuegoDeCartasLibrary.Enum
         Diamantes
     }
 
-    public enum ValorCarta
+    public enum ValorInglesa
     {
         As, 
         Uno,
@@ -29,5 +29,29 @@ namespace JuegoDeCartasLibrary.Enum
         Jota,
         Dama,
         Rey
+    }
+
+    public enum PaloEspañola
+    {
+        Basto,
+        Espada, 
+        Oro,
+        Copa
+    }
+
+    public enum ValorEspañola
+    {
+        Uno, 
+        Dos,
+        Tres,
+        Cuatro,
+        Cinco,
+        Seis,
+        Siete,
+        Ocho,
+        Nueve,
+        Diez,
+        Once,
+        Doce
     }
 }

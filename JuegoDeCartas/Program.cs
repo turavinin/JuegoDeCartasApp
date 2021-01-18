@@ -11,6 +11,7 @@ namespace JuegoDeCartas
     {
         static void Main(string[] args)
         {
+            // MAZO POKER
             Console.WriteLine("POKER:");
             var mazoPoker = new MazoPoker();
             var mano = mazoPoker.RepartirCartas();
@@ -21,6 +22,7 @@ namespace JuegoDeCartas
             }
             Console.WriteLine();
 
+            // MAZO BJ
             Console.WriteLine("BLACK JACK:");
             var mazoBJ = new MazoBJ();
             var manoBJ = mazoBJ.RepartirCartas();
@@ -31,6 +33,7 @@ namespace JuegoDeCartas
             }
             Console.WriteLine();
 
+            // MAZO TRUCO
             Console.WriteLine("MANO DE TRUCO");
 
 
