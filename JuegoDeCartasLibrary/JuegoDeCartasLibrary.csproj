@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enum\Enum.cs" />
+    <Compile Include="Mazo.cs" />
     <Compile Include="Model\CartaJugableModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
