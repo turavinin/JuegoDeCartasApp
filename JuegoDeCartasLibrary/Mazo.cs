@@ -34,5 +34,16 @@ namespace JuegoDeCartasLibrary
             Random rdm = new Random();
             cartasDisponibles = mazoCompleto.OrderBy(x => rdm.Next()).ToList();
         }
+
+        public abstract List<CartaJugableModel> RepartirCarta();
+
+        public CartaJugableModel PedirCarta()
+        {
+            CartaJugableModel output = cartasDisponibles.Take(1).First();
+            cartasDisponibles.Remove(output);
+
+            return output;
+
+        }
     }
 }
