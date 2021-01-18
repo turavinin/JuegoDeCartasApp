@@ -26,8 +26,13 @@ namespace JuegoDeCartasLibrary
                 {
                     mazoCompleto.Add(new CartaJugableModel { Palo = (PaloCarta)palo, Valor = (ValorCarta)valor });
                 }
-
             }
+        }
+
+        public void MezclarMazo()
+        {
+            Random rdm = new Random();
+            cartasDisponibles = mazoCompleto.OrderBy(x => rdm.Next()).ToList();
         }
     }
 }
