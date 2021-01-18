@@ -9,7 +9,7 @@ namespace JuegoDeCartasLibrary.Model
 {
     public class CartaJugableModel
     {
-        public Palo PaloCarta { get; set; }
-        public Valor ValorCarta { get; set; }
+        public PaloCarta Palo { get; set; }
+        public ValorCarta Valor { get; set; }
     }
 }
