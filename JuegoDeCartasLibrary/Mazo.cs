@@ -10,11 +10,11 @@ namespace JuegoDeCartasLibrary
 {
     public abstract class Mazo
     {
-        public List<CartaJugableModel> mazoCompleto = new List<CartaJugableModel>();
-        public List<CartaJugableModel> cartasDisponibles = new List<CartaJugableModel>();
-        public List<CartaJugableModel> cartasDesechadas = new List<CartaJugableModel>();
+        internal List<CartaJugableModel> mazoCompleto = new List<CartaJugableModel>();
+        internal List<CartaJugableModel> cartasDisponibles = new List<CartaJugableModel>();
+        internal List<CartaJugableModel> cartasDesechadas = new List<CartaJugableModel>();
 
-        public void CrearMazo()
+        internal void CrearMazo()
         {
             // Limpiar mazo cada vez que se llama a crearlo
             mazoCompleto.Clear();
@@ -29,13 +29,13 @@ namespace JuegoDeCartasLibrary
             }
         }
 
-        public void MezclarMazo()
+        internal void MezclarMazo()
         {
             Random rdm = new Random();
             cartasDisponibles = mazoCompleto.OrderBy(x => rdm.Next()).ToList();
         }
 
-        public abstract List<CartaJugableModel> RepartirCarta();
+        public abstract List<CartaJugableModel> RepartirCartas();
 
         public CartaJugableModel PedirCarta()
         {
